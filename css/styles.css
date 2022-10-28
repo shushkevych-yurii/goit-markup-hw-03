@@ -63,11 +63,12 @@ body{
 .header{
     display: flex;
     align-items: center;
-    border-bottom: #757575 1px;
+    border-bottom: #757575 1px solid;
        
 }
 .menu{
-    display: flex;
+    display:inline-flex;
+    
     
 }
 .menu .menu-item{
@@ -109,7 +110,7 @@ body{
 }
 .site-nav .item {
     margin-right: 40px;
-    display: block;
+   
 }
 .site-nav .item:last-child{
     margin-right: 0;
@@ -135,6 +136,7 @@ body{
     padding-bottom: 200px;
     align-items: center;
     background-size: cover;
+    padding-top: 200px;
 
     
 }
@@ -145,7 +147,7 @@ body{
     line-height: 1.36;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    padding-top: 200px;
+    
 
 }
 /* Кнопка банера */
@@ -164,7 +166,15 @@ body{
     align-items: center;
     width: 216px;
     height: 50px;
+    border: none;
       
+}
+
+.hero-button:focus, .hero-button:active{
+    background: #188CE8;
+    border: 1px solid #000000;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
 }
 .section{
     padding-top: 94px;
@@ -197,13 +207,14 @@ body{
     text-align: center; 
     border-radius: 0px 0px 4px 4px; 
 }
+
 .card{
     padding-top: 30px;
     padding-bottom: 10px;
     font-style: inherit;
 }
 .card-team{
-margin-right: 30px;
+    margin-right: 30px;
 }
 
 .team{
@@ -211,13 +222,13 @@ margin-right: 30px;
     
 }
 
-li>h2 {
+.h2 {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
     color:var(--title-text-color);
-    margin-top: 10px;
+    
 }
 
 .title-style{
@@ -227,7 +238,7 @@ li>h2 {
     text-align: center;
     color: var(--title-text-color);
 }
-.div>.h3{
+.h3{
     
     font-weight: 500;
     font-size: 16px;
@@ -237,10 +248,14 @@ li>h2 {
     
 }
 
-.list>.p{
+.content-style{
+    font-style: inherit;
+}
+.p{
     font-size: 16px;
     line-height: 1.18;
     text-align: center;
+    font-style: inherit;
 }
 a>p{
     color:var(--primary-text-color);
@@ -257,7 +272,7 @@ a>p{
 
 .footer{
  background-color: var(--footer-bgrd);
- height: 252px;
+ padding:60px 0;
  width: cover;
  
 }
@@ -270,9 +285,9 @@ a>p{
     color:var(--accent-color);
     text-decoration: none;
     margin-bottom: 20px;
-    padding-top:60px;
+    
 }
-    .logo-white{
+.logo-white{
     color:var(--bgrd-color);
 }
 /* Прибрані крапки у списках */
@@ -292,7 +307,7 @@ a>p{
     line-height: 1.62;
     text-align: center;
     background: #F5F4FA;
-    border-radius: 4px;
+    
 
     color: var(--title-text-color);
 }
@@ -322,7 +337,7 @@ a>p{
     text-decoration: none;
     font-style: normal;
     line-height: 1.71;
-    padding-bottom: 9px; 
+    
     
 }
 .adress:hover,.link:focus{
@@ -336,7 +351,10 @@ a>p{
     text-decoration: none;
     line-height: 1.71;
     color: var(--bgrd-color);
-    padding-bottom: 9px;
+  
+}
+.list-item{
+    margin-bottom: 9px;
 }
 .hidden{
     display: none;
@@ -386,5 +404,7 @@ a{
 .content-block{
     font-style: inherit;
     padding-top:20px;
+    list-style: none;
+    text-decoration: none;
 }
 
