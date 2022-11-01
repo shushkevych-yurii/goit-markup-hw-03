@@ -227,20 +227,19 @@ body{
 }
 
 
-.h2 {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    text-transform: uppercase;
-    color:var(--title-text-color);
-    
-}
+
 .h2-title{
     font-weight: 700;
-    font-size: 14px;
+    font-size: 18px;
     line-height: 1.14;
     text-transform: uppercase;
     color:var(--title-text-color);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+/* identical to box height, or 200% */
+
+letter-spacing: 0.06em;
 }
 .title-style{
     font-weight: 700;
@@ -259,17 +258,15 @@ body{
 .content-style{
     font-style: inherit;
     
-}
-.p{
-    font-size: 16px;
-    line-height: 1.18;
-    text-align: center;
-    font-style: inherit;
+    
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    
 }
 
-a>p{
-    color:var(--primary-text-color);
-}
+
 
 .section-team{
     background-color: #F5F4FA;
@@ -407,17 +404,22 @@ a{
     
 }
 .list-content>.content-list{
-    
+    padding: 0;
     list-style: none;
     flex-basis: calc(100% / 3 - 40px);
     
-    border: 1px solid #EEEEEE;
+    
 }
 .content-block{
     font-style: inherit;
+    margin-top: 0;
     padding-top:20px;
+    padding-bottom: 20px;
+    padding-left: 24px;
+    padding-right: 24px;
     list-style: none;
     text-decoration: none;
+    border: 1px solid #EEEEEE;
 }
 .portfolio-h2title{
     font-style: inherit;
@@ -436,4 +438,11 @@ a{
     text-decoration: none;
 }
 
-
+.text-portfolio{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.88;
+    text-decoration: none;
+    color:var(--primary-text-color);
+    letter-spacing: 0.03em;
+}
